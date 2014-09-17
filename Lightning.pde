@@ -132,7 +132,7 @@ class Zap
 		endX = 0;
 		endY = 150;
 	}
-	void mousePressed()
+	void click()
 	{	
 		startX = mouseX;
 		startY = mouseY;
@@ -155,5 +155,7 @@ class Zap
 
 void mousePressed()
 {
-	z.mousePressed();
+	background(0);
+	z.click();
+	redraw();
 }
